@@ -1,0 +1,219 @@
+/*
+	Theme name: Portal Notícias
+	Description: Portal de notícias do Brasil e do mundo.
+	Author: Nataly S. Mota
+	Version: 1.0
+	Tags: portal, notícias, mundo, Brasil, tecnologia
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {padding: 0; margin: 0;}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+blockquote {margin: 30px 3% 0 3%; border-left: 5px solid #FF6A6A; float: left; background-color: #E8E8E8; padding-bottom: 20px;}
+.alignleft {float: left; margin-right: 2%;}
+.alignright {float: right; margin-right: 2%;}
+body {overflow-x: hidden;}
+
+/*====================== CONTEÚDO COMPLETO ======================*/
+#conteudo-completo {width: 100%; float: left;}
+
+/*====================== HEADER ======================*/
+#header {width: 100%; float: left; padding-top: 30px;}
+
+/*======== LOGO ========*/
+#logo {width: 250px; background-color: #987; text-align: center; margin-left: 3%;}
+#logo a h1 {font-size: 2em; color: #1C1C1C;}
+#logo a h1 span {font-size: .6em;}
+
+/*======== PUBLICIDADE ========*/
+#header #publicidade {width: 90%; height: 90px; border: 1px solid #CFCFCF; margin: 20px auto 0 auto; background-color: #E8E8E8;}
+#header #publicidade h2 {font-size: 2.3em; font-family: 'Arial', sans-serif; text-align: center; margin-top: 25px;}
+
+/*======== MENU ========*/
+#header #btn-menu {width: 100%; float: left; margin-top: 25px; padding: 10px 0; background-color: #B22222; color: #FFFAFA; font-size: 1em; font-weight: 600; text-transform: uppercase; border: none;}
+#header #btn-menu:hover {background-color: #A52A2A; cursor: pointer;}
+#header #btn-menu:focus {background-color: #A52A2A;}
+#header #menu {width: 100%; float: left; background-color: #222; display: none;}
+#header #menu ul {list-style: none; position: relative;}
+#header #menu ul li {width: 100%; float: none;}
+#header #menu ul li a {padding: 15px; display: block; background-color: #222; color: rgb(247, 187, 187); font-family: 'Arial', sans-serif;}
+#header #menu ul li a::before {content: "» "; margin-left: 20px;}
+#header #menu ul li ul {position: static; overflow: hidden; max-height: 0; transition: all .4s;}
+#header #menu ul li:hover ul {height: auto; max-height: 200px;}
+#header #menu ul li a:hover {background-color: #8B2323;}
+#header #menu ul li ul li {float: none;}
+#header #menu ul li ul li a {background-color: #333;}
+#header #menu ul li ul li a::before {content: "";}
+
+/*====================== DESTAQUES ======================*/
+#destaques {width: 100%; float: left; padding: 30px 0 20px 0;}
+#destaques #destaque {width: 95%; margin: 0 auto 10px auto; border: 1px solid #E8E8E8; padding: 30px 0 30px 0;}
+#destaques #destaque a h3 {color: #696969; font-size: 2em; font-family: 'Roboto Slab', serif; margin: 0 3% 0 3%;}
+#destaques #destaque a h3:hover {color: #A52A2A;}
+#destaques #destaque a p {text-transform: none; color: #696969; margin-right: 3%;}
+#destaques #destaque p {margin: 20px 0 0 3%; color: #9C9C9C; text-transform: uppercase; font-family: sans-serif; font-size: .9em;}
+#destaques #destaque p a {color: #696969;}
+#destaques #destaque p a:hover {color: #8B2323;}
+
+
+/*====================== NOTÍCIAS DESTAQUES ======================*/
+#noticias-destaques {width: 100%; float: left; padding: 30px 0 10px 0; background-color: rgb(255, 240, 240);}
+#noticias-destaques #noticia-destaque {width: 95%; margin: 0 auto 20px auto;}
+#noticias-destaques #noticia-destaque figure img {width: 100%; height: 100%;}
+#noticias-destaques #noticia-destaque a {font-size: 1.2em; color: #696969;}
+#noticias-destaques #noticia-destaque a:hover {color: #CD2626;}
+
+/*====================== NOTÍCIAS ======================*/
+#noticias {width: 100%; float: left; padding: 30px 0;}
+#noticias h4 {color: #4F4F4F; text-transform: uppercase; font-family: sans-serif; font-weight: bold; font-size: 2em; margin-left: 3%;}
+#noticias #noticia {width: 95%; margin: 30px auto 0 auto;}
+#noticias #noticia figure img {width: 100%; height: 100%;}
+#noticias #noticia #titulo-noticia {width: 100%;}
+#noticias #noticia #titulo-noticia a h3 {font-size: 1.1em; font-family: sans-serif; font-weight: bold; color: #A52A2A; margin-left: 0;}
+#noticias #noticia #titulo-noticia a h3:hover {color: #CD2626;}
+#noticias #noticia #titulo-noticia p {margin-top: 4%; color: #9C9C9C; font-family: sans-serif; font-size: .9em;}
+
+/*====================== NEWSLETTER ======================*/
+#newsletter {width: 100%; float: left; padding: 30px 0 40px 0; background-color: #8B2323; text-align: center;}
+#newsletter h4 {font-size: 2em; color: rgb(247, 187, 187); font-family: 'Arial', sans-serif;}
+#newsletter p {color: rgb(247, 187, 186); font-family: 'Tahoma', sans-serif;}
+#newsletter #form-newsletter input {width: 60%; margin-top: 40px; padding: 10px 0 10px 10px; font-size: 1em; color: #363636;}
+#newsletter #form-newsletter input[type="submit"] {width: 50%; padding: 10px 0; margin-top: 10px; font-size: 1em; background-color: #CD5555; border: none; color: rgb(247, 187, 187);}
+#newsletter #form-newsletter input[type="submit"]:hover {cursor: pointer; background-color: #EE6363;}
+#newsletter #carregando-news, #newsletter #retorno-news {color: rgb(247, 187, 187); margin-top: 10px; font-family: 'Tahoma', sans-serif; font-size: .9em; display: none;}
+#newsletter #retorno-news {width: 100%; padding: 10px 0; text-align: center;}
+
+/*====================== FOOTER ======================*/
+#footer {width: 100%; float: left; background-color: #1C1C1C; padding: 30px 0 10px 0;}
+#footer #menu-footer {width: 95%; margin: 60px auto 0 auto; border-bottom: 1px solid #333; word-spacing: 25px;}
+#footer #menu-footer ul li {display: inline;}
+#footer #menu-footer ul li a {color: #828282; font-family: 'Arial', sans-serif; font-size: .9em;}
+#footer #menu-footer ul li a:hover {color: #9C9C9C;}
+#footer p {text-align: center; color: #696969; margin-top: 10px;}
+
+/*====================== PAGE ======================*/
+#page {width: 100%; float: left; padding: 30px 0;}
+#page .titulo {font-size: 2em; font-family: 'Arial', sans-serif; font-weight: bold; color: #363636; text-transform: uppercase; margin: 0 3% 0 3%; display:block;}
+#page h1, h2, h3, h4, h5, h6 {font-size: 1.6em; font-family: 'Arial', sans-serif; font-weight: bold; color: #4F4F4F; margin: 10px 3% 0 3%;}
+#page h2, h3, h4, h5, h6 {color: #696969;}
+#page h2 {font-size: 1.5em;}
+#page h3 {font-size: 1.4em;}
+#page h4 {font-size: 1.3em;}
+#page h5 {font-size: 1.2em;}
+#page h6 {font-size: 1.1em;}
+#page p {font-family: 'Tahoma', serif; font-size: .9em; color: #363636; margin: 20px 3% 0 3%;}
+#page ul {font-family: 'Tahoma', serif; font-size: .9em; color: #4F4F4F; list-style: square; margin: 10px 3% 0 9%;}
+#page ol {font-family: 'Tahoma', serif; font-size: .9em; color: #4F4F4F; margin: 10px 3% 0 9%;}
+#page a {color: #A52A2A;}
+#page a:hover {color: #CD2626; text-decoration: underline;}
+
+/*======== CONTATO ========*/
+#page form {width: 100%; float: left;}
+#page form input[type='text'], input[type='email'], textarea {width: 98%; padding: 8px 0;}
+#page form input[type='submit'] {padding: 8px 10px; color: rgb(247, 187, 187); background-color: #B22222; border: none;}
+#page form input[type='submit']:hover {cursor: pointer; background-color: #8B2323;}
+
+/*====================== SINGLE ======================*/
+#single {width: 100%; float: left; padding: 30px 0;}
+#single #post {width: 100%; float: left;}
+#single .titulo {font-size: 2em; font-family: 'Arial', sans-serif; font-weight: bold; color: #363636; text-transform: uppercase; margin: 0 3%; display:block;}
+#single h1, h2, h3, h4, h5, h6 {font-size: 1.6em; font-family: 'Arial', sans-serif; font-weight: bold; color: #4F4F4F; margin: 10px 3% 0 3%;}
+#single h2, h3, h4, h5, h6 {color: #696969;}
+#single h2 {font-size: 1.5em;}
+#single h3 {font-size: 1.4em;}
+#single h4 {font-size: 1.3em;}
+#single h5 {font-size: 1.2em;}
+#single h6 {font-size: 1.1em;}
+#single img {width: 100%; height: 100%;}
+#single p, #single .tags {font-family: 'Tahoma', serif; font-size: 1em; line-height: 28px; color: #363636; margin: 0 3%;}
+
+#single ul {font-family: 'Tahoma', serif; font-size: .9em; color: #4F4F4F; list-style: square; margin: 10px 3% 0 9%;}
+#single ol {font-family: 'Tahoma', serif; font-size: .9em; color: #4F4F4F; margin: 10px 3% 0 9%;}
+#single .tags {margin-top: 30px; float: left; font-size: .9em;}
+#single .tags a:hover {color: #CD2626;}
+#single a {color: #A52A2A;}
+#single a:hover {color: #CD2626; text-decoration: underline;}
+#single .data-autor-post {font-family: 'Tahoma', serif; font-size: .9em; color: #828282; margin: 30px 3% 10px 3%; float: left;}
+
+/*====================== SIDEBAR ======================*/
+#sidebar {width: 27%; float: right; display: none;}
+#sidebar #anuncio {border: 1px solid #CFCFCF; text-align: center; background-color: #E8E8E8; padding: 100px 0; font-size: 1.5em; font-family: 'Arial', sans-serif; margin-right: 2%;}
+#sidebar #noticias {width: auto; border: 1px solid #CFCFCF; background-color: #E8E8E8; font-family: 'Arial', sans-serif; margin: 30px 2% 0 0; padding: 20px 0; }
+#sidebar #noticias h2 {font-size: 1.5em; color: #4F4F4F;}
+#sidebar #noticias #noticia {width: 100%; margin-top: 20px;}
+#sidebar #noticias #noticia a h3 {font-size: 1em; color: #A52A2A; margin: 0 3% 0 3%;}
+#sidebar #noticias #noticia a:hover {text-decoration: none;}
+#sidebar #noticias #noticia a h3:hover {color: #CD2626;}
+#sidebar #noticias #noticia p {font-size: .9em; margin: 0 3%; line-height: 20px;}
+
+/*====================== CATEGORY ======================*/
+#category {width: 100%; float: left; padding: 30px 0;}
+#category #categoria-noticias {width: 100%; float: left;}
+#category h2 {font-family: 'Arial', sans-serif; font-weight: bold; color: #363636; text-transform: uppercase;}
+#category #categoria-noticia {width: 100%; float: left; margin-top: 50px;}
+#category a h3 {font-size: 1.1em; color: #A52A2A; margin: 0 3%;}
+#category a h3:hover {color: #CD2626;}
+#category a p {color: #363636; font-family: 'Tahoma', serif; font-size: .9em; margin: 10px 3% 0 3%;}
+#category #info-post {margin: 5px 3% 0 3%; color: #828282; font-family: 'Tahoma', serif; font-size: .8em;}
+
+/*====================== PAGINACAO ======================*/
+#category #paginacao {width: 100%; float: left; text-align: center; padding: 5px 0; margin-top: 30px; font-family: 'Tahoma', serif; font-size: .9em; color: #4F4F4F;}
+#category #paginacao a {color: #4F4F4F;}
+
+/*====================== 404 ======================*/
+#error {width: 100%; float: left; padding: 30px 0;}
+#error #message-error {width: 100%; float: left; text-align: center;}
+#error #message-error h3 {margin-top: 30px;}
+#error #message-error figure {width: 90%; margin: 50px auto 0 auto;}
+#error #message-error figure img {width: 100%;}
+
+/*====================== PLUGIN FACEBOOK COMMENTS ======================*/
+.fb-comments {margin-left: 2%;}
+
+/*====================== RESPONSIVE ======================*/
+@media screen and (min-width: 400px) {
+	#noticias-destaques #noticia-destaque {width: 41%; float: left; margin-left: 6%;}
+	#newsletter #form-newsletter input[type="submit"] {width: 190px;}
+}
+@media screen and (min-width: 540px) {
+	#noticias #noticia {width: 100%; float: left;}
+	#noticias #noticia a img {width: 45%; float: left; margin-left: 3%;}
+	#noticias #noticia #titulo-noticia {width: 47%; float: left; padding: 5px 5px 0 15px;}
+	#noticias #noticia #titulo-noticia a h3 {font-size: 1.4em;}
+	#newsletter h4 {font-size: 3em;}
+	#page form input[type='text'], input[type='email'], textarea {width: 500px;}
+}
+@media screen and (min-width: 640px) {
+	#noticias #noticia a img {width: 300px;}
+	#newsletter #form-newsletter input {width: 500px;}
+	#page ul, #page ol {margin-left: 7%;}
+	#error #message-error figure {width: 580px;}
+}
+@media screen and (min-width: 768px) {
+	#noticias-destaques #noticia-destaque {width: 30%; margin-left: 2.5%;}
+	#noticias #noticia a h3 {font-size: 1.3em;}
+	#single #post {width: 780px;}
+}
+@media screen and (min-width: 980px) {
+	#noticias #noticia #titulo-noticia {width: 600px;}
+}
+@media screen and (min-width: 1024px) {
+	body {overflow-x: auto;}
+	#header #logo {float: left; margin-left: 3%;}
+	#header #publicidade {width: 690px; float: right; margin: 0 30px 0 0;}
+	#header #btn-menu {display: none;}
+	#header #menu {background-color: #B22222; display: block !important; margin-top: 40px;}
+	#header #menu ul li {width: 150px; float: left; text-align: center;}
+	#header #menu ul li a {background-color: transparent;}
+	#header #menu ul li ul {position: absolute; visibility: hidden;}
+	#header #menu ul li:hover ul {visibility: visible;}
+	#header #menu ul li a::before {display: none;}
+	#destaques #destaque {width: 48%; float: left; margin-left: 1.3%;}
+	#single #post, #category #categoria-noticias, #error #message-error {width: 70%;}
+	#sidebar {display: block;}
+}
+@media screen and (min-width: 1280px) {
+	#conteudo-completo {width: 1280px; margin: 0 auto; float: none;}
+}
